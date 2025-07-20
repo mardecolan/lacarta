@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mar de Colán – Carta</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #0a47a1;      /* azul profundo */
+  --secondary: #0099cc;    /* azul onda marina */
+  --accent: #a2d4bc;       /* verde espuma */
+  --bg: #f5fbff;
+}
+* {box-sizing: border-box; margin:0; padding:0;}
+body{
+  font-family:'Montserrat', sans-serif;
+  background: var(--bg);
+  color:#111;
+  line-height:1.4;
+}
+header{
+  background:linear-gradient(135deg,var(--primary),#144fbd);
+  padding:1.5rem 1rem;
+  text-align:center;
+  color:#fff;
+  position:relative;
+}
+header img{
+  max-width:160px;
+  height:auto;
+  margin-bottom:0.5rem;
+  filter:drop-shadow(0 2px 4px rgba(0,0,0,.3));
+}
+header h1{
+  font-size:2rem;
+  letter-spacing:1px;
+  font-weight:700;
+}
+header p{
+  font-size:.9rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-top:.2rem;
+}
+main{
+  max-width:960px;
+  margin:2rem auto;
+  padding:0 1rem 3rem;
+}
+.category{
+  margin-top:2.5rem;
+}
+.category h2{
+  font-size:1.5rem;
+  color:var(--primary);
+  border-bottom:2px solid var(--accent);
+  padding-bottom:.25rem;
+  display:inline-block;
+  margin-bottom:1rem;
+}
+.menu-grid{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:.35rem 1rem;
+}
+.menu-item{
+  font-weight:600;
+}
+.price{
+  justify-self:end;
+}
+.note{
+  font-size:.85rem;
+  font-style:italic;
+  margin-top:1.5rem;
+  color:#555;
+}
+footer{
+  text-align:center;
+  font-size:.8rem;
+  color:#666;
+  padding:1.5rem 0;
+}
+@media (max-width:600px){
+  .menu-grid{
+    grid-template-columns:1fr auto;
+  }
+  header h1{font-size:1.6rem;}
+}
+</style>
+</head>
+<body>
+<header>
+  <img src="logo-fondo.png" alt="Logo Mar de Colán">
+  <h1>Mar de Colán</h1>
+  <p>Pescados y Mariscos</p>
+</header>
+<main>
+
+<section class="category" id="platos">
+  <h2>Platos</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Ronda Marina</span><span class="price">S/ 80.00 | S/ 100.00</span>
+    <span class="menu-item">Tiradito</span><span class="price">S/ 28.00</span>
+    <span class="menu-item">Tiradito 3 tiempos</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Ceviche de pescado</span><span class="price">S/ 25.00 | S/ 30.00</span>
+    <span class="menu-item">Ceviche mixto</span><span class="price">S/ 35.00</span>
+    <span class="menu-item">Ceviche de caballa</span><span class="price">S/ 25.00 | S/ 30.00</span>
+    <span class="menu-item">Ceviche de pescado y pulpo</span><span class="price">S/ 40.00</span>
+    <span class="menu-item">Ceviche de pulpo</span><span class="price">S/ 38.00</span>
+    <span class="menu-item">Ceviche langostino</span><span class="price">S/ 35.00</span>
+    <span class="menu-item">Pulpo a la chalaca</span><span class="price">S/ 28.00</span>
+    <span class="menu-item">Pulpo al olivo</span><span class="price">S/ 28.00</span>
+  </div>
+</section>
+
+<section class="category" id="causas">
+  <h2>Causas</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Causa de pescado</span><span class="price">S/ 15.00</span>
+    <span class="menu-item">Causa de langostino</span><span class="price">S/ 25.00</span>
+    <span class="menu-item">Causa de pulpo</span><span class="price">S/ 25.00</span>
+    <span class="menu-item">Festival de causas</span><span class="price">S/ 30.00</span>
+  </div>
+</section>
+
+<section class="category" id="duos">
+  <h2>Dúos</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Ceviche con causa o chicharrón</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Ceviche con chicharrón de mariscos</span><span class="price">S/ 35.00</span>
+    <span class="menu-item">Ceviche y arroz con marisco</span><span class="price">S/ 30.00</span>
+  </div>
+</section>
+
+<section class="category" id="triples">
+  <h2>Triples</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Chicharrón, ceviche y arroz con marisco</span><span class="price">S/ 35.00</span>
+  </div>
+</section>
+
+<section class="category" id="sudado">
+  <h2>Sudado &amp; Arroz/Chaufa</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Parihuela de filete</span><span class="price">S/ 38.00</span>
+    <span class="menu-item">Arroz con marisco especial</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Chaufa de marisco</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Chaufa de pescado</span><span class="price">S/ 29.00</span>
+    <span class="menu-item">Chaufa de pollo</span><span class="price">S/ 28.00</span>
+  </div>
+</section>
+
+<section class="category" id="chicharrones">
+  <h2>Chicharrones &amp; Jaleas</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Chicharrón de pescado</span><span class="price">S/ 28.00</span>
+    <span class="menu-item">Chicharrón de pulpo</span><span class="price">S/ 40.00</span>
+    <span class="menu-item">Chicharrón mixto</span><span class="price">S/ 35.00</span>
+    <span class="menu-item">Jalea de filete</span><span class="price">S/ 38.00</span>
+    <span class="menu-item">Jalea pescado entero</span><span class="price">S/ 45.00</span>
+    <span class="menu-item">Lapas arrebozadas</span><span class="price">S/ 38.00</span>
+  </div>
+</section>
+
+<section class="category" id="chupes">
+  <h2>Chupes</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Chupe de camarón</span><span class="price">S/ 45.00</span>
+    <span class="menu-item">Chupe de marisco</span><span class="price">S/ 28.00</span>
+    <span class="menu-item">Chupe langostino</span><span class="price">S/ 35.00</span>
+  </div>
+</section>
+
+<section class="category" id="carnes">
+  <h2>Carnes</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Seco de cabrito</span><span class="price">S/ 27.00</span>
+    <span class="menu-item">Carne aliñada</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Tamal verde</span><span class="price">S/ 5.00</span>
+    <span class="menu-item">Lomo</span><span class="price">S/ 28.00</span>
+    <span class="menu-item">Chicharrón de pollo</span><span class="price">S/ 30.00</span>
+    <span class="menu-item">Bistec a lo pobre</span><span class="price">S/ 30.00</span>
+  </div>
+</section>
+
+<section class="category" id="sudado-especial">
+  <h2>Pescado Sudado (según peso)</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Chita, Lenguado, Corvina, Filete</span><span class="price">—</span>
+  </div>
+</section>
+
+<section class="category" id="bebidas">
+  <h2>Bebidas</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Maracuyá</span><span class="price">Preguntar</span>
+    <span class="menu-item">Chicha Morada</span><span class="price">Preguntar</span>
+    <span class="menu-item">Limonada frozen</span><span class="price">Preguntar</span>
+    <span class="menu-item">Gaseosa de 2 L</span><span class="price">Preguntar</span>
+    <span class="menu-item">Gaseosa de 1 L</span><span class="price">Preguntar</span>
+    <span class="menu-item">Gaseosa de ½ L</span><span class="price">Preguntar</span>
+  </div>
+</section>
+
+<section class="category" id="cervezas">
+  <h2>Cervezas</h2>
+  <div class="menu-grid">
+    <span class="menu-item">Pilsen</span><span class="price">Preguntar</span>
+    <span class="menu-item">Pilsen Negra</span><span class="price">Preguntar</span>
+    <span class="menu-item">Cusqueña Dorada</span><span class="price">Preguntar</span>
+    <span class="menu-item">Cusqueña Negra</span><span class="price">Preguntar</span>
+    <span class="menu-item">Cusqueña Trigo</span><span class="price">Preguntar</span>
+  </div>
+</section>
+
+<p class="note">* Los precios incluyen IGV. El valor del sudado de pescado puede variar según el tamaño de la pieza.</p>
+
+</main>
+
+<footer>
+  &copy; 2025 Mar de Colán | Av. Manuel A. Odría 1569 – Tacna<br>
+  Síguenos en nuestras redes: <strong>@mardecolan</strong>
+</footer>
+</body>
+</html>
+
